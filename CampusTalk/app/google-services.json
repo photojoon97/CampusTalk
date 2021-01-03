@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "294570206603",
+    "project_id": "campustalk-b0984",
+    "storage_bucket": "campustalk-b0984.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294570206603:android:a713f99d8fe99b61667b8e",
+        "android_client_info": {
+          "package_name": "com.example.campustalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294570206603-rc59sbelld4n8l2coig94n08q2vtmtqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0p4LQ7ThxyOYWsn35KMDlZlH-UizyBMg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294570206603-rc59sbelld4n8l2coig94n08q2vtmtqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
