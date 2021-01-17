@@ -1,0 +1,13 @@
+{
+    "name": "CampusTalk",
+    "version": "0.0.1",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon app"
+    },
+    "license": "GPL",
+    "dependencies": {
+        "mysql2": "^2.2.5",
+        "sequelize": "^6.3.5"
+    }
+}
