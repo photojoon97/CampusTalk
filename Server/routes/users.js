@@ -9,12 +9,12 @@ router.get('/register', (req, res) => {
 });
 
 router.post('/register', (req,res) => {
+    
+    console.log(req.body.email);
 
-    const {email} = req.body.email;
+    const user = User.findOne({email:req.body.email});
+    if(!user){
 
-    //console.log(email);
-
-    if(User.findOne(email)){
         return res.status(400).json({
             email: req.body.email,
             msg: "해당 이메일을 가진 사용자가 존재"
@@ -34,20 +34,21 @@ router.post('/register', (req,res) => {
     
                 newUser.save();
                 res.send('회원가입 완료');
-
             });
         });
     }
 })
 
 router.get('/login', (req,res) => {
-    
+    //로그인 화면
 });
 
 router.post('/login', (req,res) => {
 //jwt 토큰 발급 
+    
     const email = req.body.email;
     const password = req.body.password;
+    //console.log(email,password);
 
     const user = User.findOne({email});
     if(!user){

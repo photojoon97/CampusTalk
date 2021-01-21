@@ -28,9 +28,9 @@ db.once('open', function(){
     console.log('DB 연결 성공');
 });
 /* 몽고DB 조회 테스트 코드 
-몽고 DB 권한 문제 해결해야 테스트 가능
-MongoError: command find requires authentication
-User.findOne({emial:'abcd@abcd.com'},function(error,user){
+//몽고 DB 권한 문제 해결해야 테스트 가능
+//MongoError: command find requires authentication
+User.findOne({email:'abcd@abcd.com'},function(error,user){
     if(error){
         console.log(error);
     }
