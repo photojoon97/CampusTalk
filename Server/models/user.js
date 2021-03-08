@@ -1,3 +1,4 @@
+//회원정보에 대한 스키마
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 

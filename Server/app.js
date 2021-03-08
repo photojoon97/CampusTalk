@@ -3,11 +3,13 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 var bodyParser = require('body-parser');
 
-const User = require('./models/user');//
+const User = require('./models/user');
 
 dotenv.config();
 const app = express();
+
 const usersRouter = require('./routes/users');
+const postsRouter = require('./routes/posts');
 
 //미들웨어
 app.use(bodyParser.urlencoded({extended:false}));
@@ -42,9 +44,9 @@ User.findOne({email:'abcd@abcd.com'},function(error,user){
 
 //라우팅 설정
 app.use('/routes/users', usersRouter); //회원가입, 로그인 관련 라우팅
-
+app.use('/routes/post', postsRouter); //게시글 관련 라우팅
 
 //서버 실행
-app.listen(5000, (req,res) => {
-    console.log('5000번 포트 서버 실행');
+app.listen(8080, (req,res) => {
+    console.log('8080번 포트 서버 실행');
 });
